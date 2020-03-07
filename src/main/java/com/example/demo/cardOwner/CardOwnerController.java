@@ -23,13 +23,13 @@ public class CardOwnerController {
 
     @GetMapping("/cardsOwner")
     public String own(Model model){
-        model.addAttribute("ownerCards", repository.findAll());
+        model.addAttribute("cardOwner", repository.findAll());
         return "cardsOwner";
     }
 
     @RequestMapping(value = "/addCardOwner", method = RequestMethod.GET)
     public ModelAndView showForm() {
         return new ModelAndView("newCardOwnerForm", "cardOwner",
-                new Owner());
+                new CardOwner());
     }
 }

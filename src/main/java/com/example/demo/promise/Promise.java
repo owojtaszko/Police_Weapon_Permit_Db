@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 @Entity (name = "tb_promise")
 @Data
-@IdClass(PromisePK.class)
+@IdClass(TimePK.class)
 public class Promise implements Serializable {
     @Id
     private String ID_PROMISE;

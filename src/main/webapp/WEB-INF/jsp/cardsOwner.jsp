@@ -9,16 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Owners list</title>
+    <title>Legitymacje</title>
 </head>
 <body>
 <div class="container">
-    <h1>Ogólnopolska baza posiadaczy broni - wykaz posiadaczy</h1>
+    <h1>Ogólnopolska baza posiadaczy broni - wykaz legitymacji</h1>
     <table class="table table-striped table-bordered">
-        <c:forEach items="${ownerCards}" var="item">
+        <c:forEach items="${cardOwner}" var="item">
             <tr>
                 <td>${item.ID_CARD}</td>
                 <td>${item.PESEL}</td>
+<%--                <td>${item.SURNAME}</td>--%>
 
             </tr>
         </c:forEach>
@@ -31,6 +32,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
-<a href="addOwnerCard" target="zakladka">Add new com.example.demo.owner card</a>
+<a href="addCardOwner" target="zakladka">+Nowa legitymacja</a>
 </body>
 </html>
