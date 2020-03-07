@@ -1,4 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page isELIgnored="false" %>
 
 <!doctype html>
@@ -16,6 +17,19 @@
 
     <h1>Ogólnopolska baza posiadaczy broni - wykaz posiadaczy</h1>
     <table class="table table-striped table-bordered">
+        <b><tr>
+            <td>PESEL</td>
+            <td>Imię</td>
+            <td>Nazwisko</td>
+            <td>Ulica</td>
+            <td>Nr domu</td>
+            <td>Nr lokalu</td>
+            <td>Miejscowość</td>
+            <td>Województwo</td>
+            <td>Data ur.</td>
+            <td>Miejsce ur.</td>
+
+        </tr></b>
         <c:forEach items="${owners}" var="item">
             <tr>
                 <td>${item.PESEL}</td>

@@ -1,4 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,6 +15,13 @@
 
     <h1>Ogólnopolska baza posiadaczy broni - wykaz pozwoleń</h1>
     <table class="table table-striped table-bordered">
+        tr>
+        <td>Nr pozwolenia</td>
+        <td>Data wydania pozwolenia</td>
+        <td>Organ wydający</td>
+        <td>Rodzaj pozwolenia</td>
+        <td>PESEL</td>
+        </tr>
         <c:forEach items="${permits}" var="item">
             <tr>
                 <td>${item.ID_PERMIT}</td>

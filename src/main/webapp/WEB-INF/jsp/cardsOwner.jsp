@@ -1,4 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page isELIgnored="false" %>
 
 <!doctype html>
@@ -15,12 +16,14 @@
 <div class="container">
     <h1>Ogólnopolska baza posiadaczy broni - wykaz legitymacji</h1>
     <table class="table table-striped table-bordered">
+        <tr>
+            <td>Nr legitymacji</td>
+            <td>PESEL</td>
+        </tr>
         <c:forEach items="${cardOwner}" var="item">
             <tr>
                 <td>${item.ID_CARD}</td>
                 <td>${item.PESEL}</td>
-<%--                <td>${item.SURNAME}</td>--%>
-
             </tr>
         </c:forEach>
 </table>
