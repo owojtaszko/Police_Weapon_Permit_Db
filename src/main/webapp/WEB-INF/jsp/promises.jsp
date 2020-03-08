@@ -14,6 +14,14 @@
 <div class="container">
 
     <h1>Ogólnopolska baza posiadaczy broni - wykaz promes</h1>
+    <nav>
+        <a href="/">Strona główna</a> |
+        <a href="/addPromise" target="zakladka">+Nowa promesa</a> |
+        <a href="/owners">Wykaz posiadaczy</a> |
+        <a href="/permits">Wykaz pozwoleń</a> |
+        <a href="/guns">Wykaz broni</a> |
+        <a href="/cardsOwner">Wykaz legitymacji</a> |
+    </nav>
     <table class="table table-striped table-bordered">
         <tr>
             <td>Nr promesy</td>
@@ -39,7 +47,5 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-
-<a href="addPromise" target="zakladka">+Nowa promesa</a>
 </body>
 </html>

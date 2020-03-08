@@ -2,9 +2,7 @@ package com.example.demo.cardOwner;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.IdClass;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity(name = "tb_card_owner")
@@ -12,7 +10,10 @@ import java.io.Serializable;
 @Data
 public class CardOwner implements Serializable {
     @Id
+    @Column(unique = true, nullable = false)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String ID_CARD;
+
     @Id
     private String PESEL;
 }

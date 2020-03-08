@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
 
 @Controller
 public class PermitController {
@@ -17,7 +19,8 @@ public class PermitController {
 
     @GetMapping("/permits")
     public String permits(Model model){
-        model.addAttribute("permits", repository.findAll());
+        List<Permit> all = repository.findAll();
+        model.addAttribute("permits", all);
         return "permits";
     }
 
