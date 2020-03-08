@@ -11,7 +11,7 @@ import java.io.Serializable;
 public class CardOwner implements Serializable {
     @Id
     @Column(unique = true, nullable = false)
-    @GeneratedValue(strategy = GenerationType.AUTO)
+  //  @GeneratedValue(strategy = GenerationType.AUTO)
     private String ID_CARD;
 
     @Id

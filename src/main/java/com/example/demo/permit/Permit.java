@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class Permit implements Serializable {
     @Id
     @Column(unique = true)
-    @GeneratedValue(strategy = GenerationType.AUTO)
+ //   @GeneratedValue(strategy = GenerationType.AUTO)
     private String ID_PERMIT;
 
     private String DATE_PERMIT_RELEASE;

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<form:form method="POST" cssClass="form" action="/addCardOwner" modelAttribute="cardOwner">
+<form:form method="POST" cssClass="form" action="/cardsOwner" modelAttribute="cardOwner">
 
     <div class="input-group mb-3">
         <div class="input-group-prepend">

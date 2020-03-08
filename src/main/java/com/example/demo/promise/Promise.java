@@ -13,7 +13,7 @@ import java.io.Serializable;
 public class Promise implements Serializable {
     @Id
     @Column(unique = true)
-    @GeneratedValue(strategy = GenerationType.AUTO)
+ //   @GeneratedValue(strategy = GenerationType.AUTO)
     @JoinColumn
     private String ID_PROMISE;
 

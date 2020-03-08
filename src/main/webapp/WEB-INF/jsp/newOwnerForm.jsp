@@ -75,6 +75,13 @@
         <form:input cssClass="form-control" path="BIRTH_DATE"/>
     </div>
 
+    <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Miejsce urodzenia</span>
+        </div>
+        <form:input cssClass="form-control" path="BIRTH_CITY"/>
+    </div>
+
 
     <input class="btn btn-primary" type="submit" value="Submit">
 </form:form>
